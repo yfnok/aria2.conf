@@ -79,9 +79,9 @@ OUTPUT_UPLOAD_LOG() {
 DEFINITION_PATH() {
     LOCAL_PATH="${TASK_PATH}"
     if [[ -f "${TASK_PATH}" ]]; then
-        REMOTE_PATH="${DRIVE_NAME}:${DRIVE_DIR}${DEST_PATH_SUFFIX%/*}"
+        REMOTE_PATH="${DRIVE_NAME}:${DRIVE_DIR}"
     else
-        REMOTE_PATH="${DRIVE_NAME}:${DRIVE_DIR}${DEST_PATH_SUFFIX}"
+        REMOTE_PATH="${DRIVE_NAME}:${DRIVE_DIR}"
     fi
 }
 
